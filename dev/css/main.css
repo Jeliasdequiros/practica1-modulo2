@@ -356,15 +356,23 @@ body {
 #container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 10% 1fr 1fr;
-  grid-template-rows: auto 100px auto auto;
+  grid-template-columns: 5% 35% 70%;
+  grid-template-rows: 100px 1fr;
 }
 
-.header__nombre {
+.header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.header.header__nombre {
   color: #E8E8E8;
   font-size: 1.5rem;
 }
 
+.main {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
 .main.main__titulo {
   color: #E8E8E8;
   font-size: 2.25rem;

@@ -4,25 +4,31 @@ body{
 }
 
 // Grid principal #container
-    #container{
-        height: 100vh;
-        display: grid;
-        grid-template: {
-            columns: 10% 1fr 1fr;
-            rows: auto 100px auto auto;
+ #container{
+height: 100vh;
+display: grid;
+grid-template: {
+    columns: 5% 35% 70%;
+    rows: 100px 1fr;
         }
         
     }
    
-
-.header__nombre{
-    color: $colortexto;
-    font-size: map-get($font, h1);
+.header{
+grid-column: 2/3;
+grid-row: 1/2;
+    &.header__nombre{
+        color: $colortexto;
+        font-size: map-get($font, h1);
+    }
 }
 
 
+
 .main{
-    
+grid-column: 2/3;
+grid-row: 2/3;
+
     &.main__titulo{
        color: $colortexto;
        font-size: map-get($font, h4);
