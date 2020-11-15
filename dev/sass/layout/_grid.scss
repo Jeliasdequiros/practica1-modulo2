@@ -1,0 +1,35 @@
+body{ 
+    font-family: Arial , sans-serif;
+    background-color: $colorfondo;
+}
+
+// Grid principal #container
+    #container{
+        height: 100vh;
+        display: grid;
+        grid-template: {
+            columns: 10% 1fr 1fr;
+            rows: auto 100px auto auto;
+        }
+        
+    }
+   
+
+.header__nombre{
+    color: $colortexto;
+    font-size: map-get($font, h1);
+}
+
+
+.main{
+    
+    &.main__titulo{
+       color: $colortexto;
+       font-size: map-get($font, h4);
+    }
+
+    &.main__texto{
+        color: $colortexto;
+        font-size: map-get($font, base);
+    }
+    }

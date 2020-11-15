@@ -1,0 +1,11 @@
+
+
+.main__boton{
+    background: $colorboton;
+    font-size: map-get($font, boton);
+    padding: 10 15 10 15;
+    font-weight: bold;
+    border-radius: 0.625rem;
+    text-decoration: none;
+    justify-self: end;
+}
