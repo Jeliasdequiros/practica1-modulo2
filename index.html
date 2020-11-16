@@ -7,16 +7,19 @@
     <title>DOGcall</title>
   </head>
   <body>
-    <div id="container"> 
-      <header class="header">
-        <header><img class="header__logotipo" src="../assets/img/Logo.png"/>
-          <h1 class="header__nombre">DOGcall</h1>
-        </header>
-      </header>
-      <main class="main">
-        <h4 class="main__titulo">ADOPTA</h4>
-        <p class="main__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, maiores! Cum similique libero amet molestias. Veniam, consequatur fugiat. Voluptatem dignissimos aperiam facere nisi enim repudiandae quas dolore dolores ducimus saepe eum corrupti numquam accusantium mollitia ratione quidem, cumque laudantium error. Ex quod optio iusto debitis voluptas amet ad exercitationem blanditiis.</p><a class="main__boton" href="#">¡YA!</a><img class="main__foto" src="../assets/img/perrito.jpg"/>
-      </main>
-    </div>
+    <main id="container">
+      <aside class="container__texto"><img class="texto__logo" src="/assets/svg/logoperro.svg" alt="logotipo dogcall"/>
+        <h2 class="texto__titulo">ADOPTA</h2>
+        <p class="texto__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa optio est quam quaerat veritatis blanditiis tempore ratione molestiae quae incidunt rerum nemo hic, expedita possimus vitae nam. Quia illum unde veritatis illo quasi iste cum, molestias magni saepe repellendus, quam, doloribus fugiat optio dolores suscipit. Nisi eius dolore placeat magni tempora ipsam qui rem repellat reprehenderit cupiditate ut odit, ab inventore possimus autem distinctio non. Aspernatur, assumenda at consequatur nostrum ut ipsam laborum. Amet iusto tempora quia facilis quo molestias recusandae consectetur expedita quasi ea ab, officia, consequuntur quas fugit sed, deleniti repellat fuga nihil dolorum ipsum at nesciunt itaque aspernatur rem. Distinctio consectetur consequatur nulla voluptatum repudiandae assumenda ullam asperiores at animi deleniti temporibus, quo nam numquam officia laudantium, est neque alias accusamus, error obcaecati eaque explicabo rerum labore. Beatae assumenda voluptatem unde? Quaerat, maiores quidem sunt ratione, consectetur saepe nulla officia doloremque rem, dignissimos voluptatibus quibusdam sed quis!</p><a class="texto_boton" href="#">¡YA!</a>
+      </aside>
+      <section class="container__imagen">
+        <picture>
+          <source srcset="/assets/img/smartphone/perro.jpg 1x,    /assets/img/smartphone/perro@2x.jpg 2x,    /assets/img/smartphone/perro@3x.jpg 3x" media="(min-width:0px) and (max-width:767px)"/>
+          <source srcset="/assets/img/tablet/perro.jpg 1x,    /assets/img/tablet/perro@2x.jpg 2x" media="(min-width:768px) and (max-width:900px)"/>
+          <source srcset="/assets/img/desktop/perro.jpg 1x,    /assets/img/desktop/perro@2x.jpg 2x" media="(min-width:1200px)"/><img src="" alt="Es un perrito triste"/>
+        </picture>
+        <figure class="imagen__perro"><img src="/assets/img/perrito.jpg" alt="perro abandonado"/></figure>
+      </section>
+    </main>
   </body>
 </html>
